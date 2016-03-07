@@ -1,0 +1,21 @@
+﻿<Window x:Class="LogBookWPF.DailyRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DailyRegister" Height="300" Width="622.68" Activated="Window_Activated">
+    <Grid>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="277,225,0,0" VerticalAlignment="Top" Width="75" x:Name="btnSave" Click="btnSave_Click"/>
+
+        <DatePicker HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" x:Name="DpDates" SelectedDateChanged="DpDates_SelectedDateChanged"/>
+        <ComboBox HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="120" x:Name="txtMentors" SelectionChanged="txtMentors_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,211,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" x:Name="txtTraining"/>
+
+        <DataGrid HorizontalAlignment="Left" Margin="323,28,0,0" VerticalAlignment="Top" Height="165" Width="260" x:Name="datadrid1" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridComboBoxColumn Header="Names" x:Name="menteeCm" SelectedItemBinding="{Binding Names}" SelectedValueBinding="{Binding Names, Mode=TwoWay}" Width="130"/>
+                <DataGridTextColumn Header="Hours" Binding="{Binding Name}"  Width="130"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

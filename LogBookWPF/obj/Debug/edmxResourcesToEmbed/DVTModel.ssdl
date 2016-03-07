@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DVTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AttendanceDetailsTb">
+    <Key>
+      <PropertyRef Name="DetailsId" />
+    </Key>
+    <Property Name="DetailsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MasterId" Type="int" />
+    <Property Name="Hours" Type="varchar" MaxLength="10" />
+    <Property Name="MenteeePersonId" Type="int" />
+  </EntityType>
+  <EntityType Name="AttendanceMasterTb">
+    <Key>
+      <PropertyRef Name="MasterId" />
+    </Key>
+    <Property Name="MasterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="date" />
+    <Property Name="MentorPersonId" Type="int" />
+    <Property Name="Training" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="PersonTb">
+    <Key>
+      <PropertyRef Name="PersonId" />
+    </Key>
+    <Property Name="PersonId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Names" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoleTb">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_AttendanceDetailsTb_PersonTb1">
+    <End Role="PersonTb" Type="Self.PersonTb" Multiplicity="0..1" />
+    <End Role="AttendanceDetailsTb" Type="Self.AttendanceDetailsTb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonTb">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="AttendanceDetailsTb">
+        <PropertyRef Name="MenteeePersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendanceMasterTb_PersonTb1">
+    <End Role="PersonTb" Type="Self.PersonTb" Multiplicity="0..1" />
+    <End Role="AttendanceMasterTb" Type="Self.AttendanceMasterTb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonTb">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="AttendanceMasterTb">
+        <PropertyRef Name="MentorPersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonTb_RoleTb1">
+    <End Role="RoleTb" Type="Self.RoleTb" Multiplicity="1" />
+    <End Role="PersonTb" Type="Self.PersonTb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleTb">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="PersonTb">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DVTModelStoreContainer">
+    <EntitySet Name="AttendanceDetailsTb" EntityType="Self.AttendanceDetailsTb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AttendanceMasterTb" EntityType="Self.AttendanceMasterTb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonTb" EntityType="Self.PersonTb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleTb" EntityType="Self.RoleTb" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AttendanceDetailsTb_PersonTb1" Association="Self.FK_AttendanceDetailsTb_PersonTb1">
+      <End Role="PersonTb" EntitySet="PersonTb" />
+      <End Role="AttendanceDetailsTb" EntitySet="AttendanceDetailsTb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendanceMasterTb_PersonTb1" Association="Self.FK_AttendanceMasterTb_PersonTb1">
+      <End Role="PersonTb" EntitySet="PersonTb" />
+      <End Role="AttendanceMasterTb" EntitySet="AttendanceMasterTb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonTb_RoleTb1" Association="Self.FK_PersonTb_RoleTb1">
+      <End Role="RoleTb" EntitySet="RoleTb" />
+      <End Role="PersonTb" EntitySet="PersonTb" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
