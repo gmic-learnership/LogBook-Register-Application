@@ -27,8 +27,21 @@ namespace LogBookWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DailyRegister daily = new DailyRegister();
-            daily.Show();
+            SignUpForm signing = new SignUpForm();
+            signing.Show();
+
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+        }
+
+        private void btnSignup_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpForm signup = new SignUpForm();
+            signup.Show();
         }
     }
 }

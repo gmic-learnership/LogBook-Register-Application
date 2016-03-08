@@ -3,7 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="269,199,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="216,116,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="SignUp" HorizontalAlignment="Left" Margin="338,257,0,0" VerticalAlignment="Top" Width="75" x:Name="btnSignup" Click="btnSignup_Click"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="64,257,0,0" VerticalAlignment="Top" Width="75" x:Name="btnLogin" Click="btnLogin_Click"/>
 
     </Grid>
 </Window>

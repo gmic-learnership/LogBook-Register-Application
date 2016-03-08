@@ -18,3 +18,32 @@ c:\users\vtebeila\documents\visual studio 2013\Projects\LogBookWPF\LogBookWPF\bi
 c:\users\vtebeila\documents\visual studio 2013\Projects\LogBookWPF\LogBookWPF\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\vtebeila\documents\visual studio 2013\Projects\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.exe
 c:\users\vtebeila\documents\visual studio 2013\Projects\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.pdb
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\bin\Debug\LogBookWPF.exe.config
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.exe
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.pdb
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\bin\Debug\LogBookWPF.exe
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\bin\Debug\LogBookWPF.pdb
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\bin\Debug\EntityFramework.dll
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\bin\Debug\EntityFramework.xml
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.csprojResolveAssemblyReference.cache
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\DailyRegister.baml
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\MainWindow.baml
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\SignUpForm.baml
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\DailyRegister.g.cs
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\MainWindow.g.cs
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\SignUpForm.g.cs
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\App.g.cs
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF_Content.g.cs
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF_MarkupCompile.cache
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.g.resources
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.Properties.Resources.resources
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.csproj.GenerateResource.Cache
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LoginForm.baml
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LoginForm.g.cs
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookTask.baml
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\LogBookTask.g.cs
+D:\LogBookWPF\LogBookWPF\bin\Debug\LogBookWPF.exe.config
+D:\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.exe
+D:\LogBookWPF\LogBookWPF\obj\Debug\LogBookWPF.pdb

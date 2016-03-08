@@ -58,7 +58,7 @@ namespace LogBookWPF
 
 
                     txtMentors.Items.Add(Roles);
-                    //txtMentors.Items.Add(id);
+                    
 
                 }
 
@@ -110,12 +110,26 @@ namespace LogBookWPF
             if (DpDates.SelectedDate == DateTime.Today)
             {
                 btnSave.IsEnabled = true;
+
+                List<PersonTb> user = new List<PersonTb>();
+                user = (from m in myClass.PersonTbs
+                        where m.RoleId == 3
+                        select m).ToList();
+
+                List<string> ppl = new List<string>();
+                foreach (PersonTb items in user)
+                {
+
+                    ppl.Add(items.Names);
+                }
+                datadrid1.ItemsSource = user;
+                menteeCm.ItemsSource = ppl;
             }
             else
             {
                 btnSave.IsEnabled = false;
             }
-            
+
            
         }
 
@@ -126,19 +140,7 @@ namespace LogBookWPF
 
         private void txtMentors_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            List<PersonTb> user = new List<PersonTb>();
-            user = (from m in myClass.PersonTbs
-                    where m.RoleId == 3
-                    select m).ToList();
-
-            List<string> ppl = new List<string>();
-            foreach (PersonTb items in user)
-            {
-
-                ppl.Add(items.Names);
-            }
-            datadrid1.ItemsSource = user;
-            menteeCm.ItemsSource = ppl;
+           
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)

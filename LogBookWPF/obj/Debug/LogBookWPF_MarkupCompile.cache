@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-c:\users\vtebeila\documents\visual studio 2013\Projects\LogBookWPF\LogBookWPF\obj\Debug\
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\obj\Debug\
 LogBookWPF
 none
 false
 DEBUG;TRACE
-c:\users\vtebeila\documents\visual studio 2013\Projects\LogBookWPF\LogBookWPF\App.xaml
-2401046191
+C:\Users\VTEBEILA\Desktop\LearnershipLogBookDVT\LogBookWPF\LogBookWPF\App.xaml
+5-398344293
 2791034850
-131056164522
-171264400917
-DailyRegister.xaml;MainWindow.xaml;
+17-686613185
+17-1375941871
+DailyRegister.xaml;LogBookTask.xaml;LoginForm.xaml;MainWindow.xaml;SignUpForm.xaml;
 
 False
 
