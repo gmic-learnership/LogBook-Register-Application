@@ -3,9 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="216,116,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="SignUp" HorizontalAlignment="Left" Margin="338,257,0,0" VerticalAlignment="Top" Width="75" x:Name="btnSignup" Click="btnSignup_Click"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="64,257,0,0" VerticalAlignment="Top" Width="75" x:Name="btnLogin" Click="btnLogin_Click"/>
+        <Image Margin="0,0,351,264" Source="dvt.png" Stretch="Fill"/>
+        <Grid HorizontalAlignment="Left" Height="161" Margin="0,60,0,0" VerticalAlignment="Top" Width="517" Background="#FF2A398C"/>
+        <Grid HorizontalAlignment="Left" Height="98" Margin="0,221,0,0" VerticalAlignment="Top" Width="517" Background="#FFEFAC20">
+            <Button Content="LOGIN" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" Width="131" x:Name="btnLogin" Click="btnLogin_Click" Height="65"/>
+            <Button Content="SIGNUP" HorizontalAlignment="Left" Margin="317,10,0,0" VerticalAlignment="Top" Width="138" x:Name="btnSignup" Click="btnSignup_Click" Height="65"/>
+        </Grid>
 
     </Grid>
 </Window>

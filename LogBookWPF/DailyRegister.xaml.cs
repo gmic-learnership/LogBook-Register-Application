@@ -111,19 +111,19 @@ namespace LogBookWPF
             {
                 btnSave.IsEnabled = true;
 
-                List<PersonTb> user = new List<PersonTb>();
-                user = (from m in myClass.PersonTbs
-                        where m.RoleId == 3
-                        select m).ToList();
+                //List<PersonTb> user = new List<PersonTb>();
+                //user = (from m in myClass.PersonTbs
+                //        where m.RoleId == 3
+                //        select m).ToList();
 
-                List<string> ppl = new List<string>();
-                foreach (PersonTb items in user)
-                {
+                //List<string> ppl = new List<string>();
+                //foreach (PersonTb items in user)
+                //{
 
-                    ppl.Add(items.Names);
-                }
-                datadrid1.ItemsSource = user;
-                menteeCm.ItemsSource = ppl;
+                //    ppl.Add(items.Names);
+                //}
+                //datadrid1.ItemsSource = user;
+                //menteeCm.ItemsSource = ppl;
             }
             else
             {
@@ -136,6 +136,23 @@ namespace LogBookWPF
         private void Window_Activated(object sender, EventArgs e)
         {
             DpDates.Text = DateTime.Today.ToString();
+
+            //DpDates.Text = DateTime.Today.ToString();
+            //List<PersonTb> user = new List<PersonTb>();
+            //user = (from m in myClass.PersonTbs
+            //        where m.RoleId == 3
+            //        select m).ToList();
+
+            //List<string> mentee = new List<string>() { };
+
+            //foreach (PersonTb items in user)
+            //{
+
+            //    mentee.Add(items.Names);
+
+            //}
+            //datadrid1.ItemsSource = user;
+            //menteeCm.ItemsSource = mentee;
         }
 
         private void txtMentors_SelectionChanged(object sender, SelectionChangedEventArgs e)

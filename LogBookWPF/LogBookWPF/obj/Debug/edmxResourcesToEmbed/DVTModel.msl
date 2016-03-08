@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DVTModelStoreContainer" CdmEntityContainer="DVTEntities1">
+    <EntitySetMapping Name="AttendanceDetailsTbs">
+      <EntityTypeMapping TypeName="DVTModel.AttendanceDetailsTb">
+        <MappingFragment StoreEntitySet="AttendanceDetailsTb">
+          <ScalarProperty Name="DetailsId" ColumnName="DetailsId" />
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="MenteeePersonId" ColumnName="MenteeePersonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttendanceMasterTbs">
+      <EntityTypeMapping TypeName="DVTModel.AttendanceMasterTb">
+        <MappingFragment StoreEntitySet="AttendanceMasterTb">
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="MentorPersonId" ColumnName="MentorPersonId" />
+          <ScalarProperty Name="Training" ColumnName="Training" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonTbs">
+      <EntityTypeMapping TypeName="DVTModel.PersonTb">
+        <MappingFragment StoreEntitySet="PersonTb">
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Names" ColumnName="Names" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleTbs">
+      <EntityTypeMapping TypeName="DVTModel.RoleTb">
+        <MappingFragment StoreEntitySet="RoleTb">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

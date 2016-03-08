@@ -3,19 +3,28 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="DailyRegister" Height="300" Width="622.68" Activated="Window_Activated">
     <Grid>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="277,225,0,0" VerticalAlignment="Top" Width="75" x:Name="btnSave" Click="btnSave_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="248,224,0,0" VerticalAlignment="Top" Width="75" x:Name="btnSave" Click="btnSave_Click"/>
+        <Grid HorizontalAlignment="Left" Height="80" Margin="0,189,0,0" VerticalAlignment="Top" Width="615" Background="#FFEFAC20">
+            <TextBox HorizontalAlignment="Left" Height="50" Margin="10,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" x:Name="txtTraining"/>
+            <Label Content="Training" HorizontalAlignment="Left" Margin="10,-6,0,0" VerticalAlignment="Top" Width="63" Foreground="White"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="138" Margin="0,51,0,0" VerticalAlignment="Top" Width="615" Background="#FF2A398C">
+            <DataGrid HorizontalAlignment="Left" Margin="345,0,0,0" VerticalAlignment="Top" Height="128" Width="260" x:Name="datadrid1" AutoGenerateColumns="False" >
+                <DataGrid.Columns>
+                    <DataGridComboBoxColumn Header="Names" x:Name="menteeCm" DisplayMemberPath="{Binding menteeCm}" SelectedItemBinding="{Binding menteeCm, Mode=TwoWay}" 
+        				Width="130"/>
+                    <DataGridTextColumn Header="Hours" Binding="{Binding Hours, Mode=TwoWay}"  Width="130" x:Name="Hours" />
 
-        <DatePicker HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" x:Name="DpDates" SelectedDateChanged="DpDates_SelectedDateChanged"/>
-        <ComboBox HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="120" x:Name="txtMentors" SelectionChanged="txtMentors_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,211,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" x:Name="txtTraining"/>
-
-        <DataGrid HorizontalAlignment="Left" Margin="323,28,0,0" VerticalAlignment="Top" Height="165" Width="260" x:Name="datadrid1" AutoGenerateColumns="False" >
-            <DataGrid.Columns>
-                <DataGridComboBoxColumn Header="Names" x:Name="menteeCm" SelectedItemBinding="{Binding Names}" SelectedValueBinding="{Binding Names, Mode=TwoWay}" Width="130"/>
-                <DataGridTextColumn Header="Hours" Binding="{Binding Name}"  Width="130"/>
-
-            </DataGrid.Columns>
-        </DataGrid>
+                </DataGrid.Columns>
+            </DataGrid>
+            <ComboBox HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="120" x:Name="txtMentors" SelectionChanged="txtMentors_SelectionChanged"/>
+            <DatePicker HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" x:Name="DpDates" SelectedDateChanged="DpDates_SelectedDateChanged"/>
+            <Label Content="Date" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="63" Foreground="White"/>
+            <Label Content="Mentor" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="63" Foreground="White"/>
+            <Image Margin="435,-39,132,154" Source="Picture2.png" Stretch="Fill"/>
+        </Grid>
+        <Image Margin="0,0,438,218" Source="dvt.png" Stretch="Fill"/>
+        <Label Content="Daily Register" HorizontalAlignment="Left" Margin="494,10,0,0" VerticalAlignment="Top" Width="98" Foreground="#FF2A398C" FontWeight="ExtraBlack"/>
 
     </Grid>
 </Window>

@@ -40,8 +40,10 @@ namespace LogBookWPF
 
         private void btnSignup_Click(object sender, RoutedEventArgs e)
         {
-            SignUpForm signup = new SignUpForm();
-            signup.Show();
+           // SignUpForm signup = new SignUpForm();
+            //signup.Show();
+            LogBookTask lbt = new LogBookTask();
+            lbt.Show();
         }
     }
 }

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DVTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AttendanceDetailsTb">
+    <Key>
+      <PropertyRef Name="DetailsId" />
+    </Key>
+    <Property Name="DetailsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MasterId" Type="Int32" />
+    <Property Name="Hours" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MenteeePersonId" Type="Int32" />
+    <NavigationProperty Name="PersonTb" Relationship="Self.FK_AttendanceDetailsTb_PersonTb1" FromRole="AttendanceDetailsTb" ToRole="PersonTb" />
+  </EntityType>
+  <EntityType Name="AttendanceMasterTb">
+    <Key>
+      <PropertyRef Name="MasterId" />
+    </Key>
+    <Property Name="MasterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="MentorPersonId" Type="Int32" />
+    <Property Name="Training" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PersonTb" Relationship="Self.FK_AttendanceMasterTb_PersonTb1" FromRole="AttendanceMasterTb" ToRole="PersonTb" />
+  </EntityType>
+  <EntityType Name="PersonTb">
+    <Key>
+      <PropertyRef Name="PersonId" />
+    </Key>
+    <Property Name="PersonId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Surname" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Names" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AttendanceDetailsTbs" Relationship="Self.FK_AttendanceDetailsTb_PersonTb1" FromRole="PersonTb" ToRole="AttendanceDetailsTb" />
+    <NavigationProperty Name="AttendanceMasterTbs" Relationship="Self.FK_AttendanceMasterTb_PersonTb1" FromRole="PersonTb" ToRole="AttendanceMasterTb" />
+    <NavigationProperty Name="RoleTb" Relationship="Self.FK_PersonTb_RoleTb1" FromRole="PersonTb" ToRole="RoleTb" />
+  </EntityType>
+  <EntityType Name="RoleTb">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PersonTbs" Relationship="Self.FK_PersonTb_RoleTb1" FromRole="RoleTb" ToRole="PersonTb" />
+  </EntityType>
+  <Association Name="FK_AttendanceDetailsTb_PersonTb1">
+    <End Role="PersonTb" Type="Self.PersonTb" Multiplicity="0..1" />
+    <End Role="AttendanceDetailsTb" Type="Self.AttendanceDetailsTb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonTb">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="AttendanceDetailsTb">
+        <PropertyRef Name="MenteeePersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendanceMasterTb_PersonTb1">
+    <End Role="PersonTb" Type="Self.PersonTb" Multiplicity="0..1" />
+    <End Role="AttendanceMasterTb" Type="Self.AttendanceMasterTb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonTb">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="AttendanceMasterTb">
+        <PropertyRef Name="MentorPersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonTb_RoleTb1">
+    <End Role="RoleTb" Type="Self.RoleTb" Multiplicity="1" />
+    <End Role="PersonTb" Type="Self.PersonTb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleTb">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="PersonTb">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DVTEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AttendanceDetailsTbs" EntityType="Self.AttendanceDetailsTb" />
+    <EntitySet Name="AttendanceMasterTbs" EntityType="Self.AttendanceMasterTb" />
+    <EntitySet Name="PersonTbs" EntityType="Self.PersonTb" />
+    <EntitySet Name="RoleTbs" EntityType="Self.RoleTb" />
+    <AssociationSet Name="FK_AttendanceDetailsTb_PersonTb1" Association="Self.FK_AttendanceDetailsTb_PersonTb1">
+      <End Role="PersonTb" EntitySet="PersonTbs" />
+      <End Role="AttendanceDetailsTb" EntitySet="AttendanceDetailsTbs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendanceMasterTb_PersonTb1" Association="Self.FK_AttendanceMasterTb_PersonTb1">
+      <End Role="PersonTb" EntitySet="PersonTbs" />
+      <End Role="AttendanceMasterTb" EntitySet="AttendanceMasterTbs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonTb_RoleTb1" Association="Self.FK_PersonTb_RoleTb1">
+      <End Role="RoleTb" EntitySet="RoleTbs" />
+      <End Role="PersonTb" EntitySet="PersonTbs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
