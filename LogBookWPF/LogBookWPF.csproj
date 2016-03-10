@@ -69,6 +69,10 @@
       <DependentUpon>DVTModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ConnectionClass.cs" />
+    <Compile Include="DailyRegister.xaml.cs">
+      <DependentUpon>DailyRegister.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="dataGridHelper.cs" />
     <Compile Include="DVTModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,12 +81,10 @@
     <Compile Include="LogBookTask.xaml.cs">
       <DependentUpon>LogBookTask.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.xaml.cs">
-      <DependentUpon>LoginForm.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PersonTb.cs">
       <DependentUpon>DVTModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="registerController.cs" />
     <Compile Include="RoleTb.cs">
       <DependentUpon>DVTModel.tt</DependentUpon>
     </Compile>
@@ -90,14 +92,10 @@
       <DependentUpon>SignUpForm.xaml</DependentUpon>
     </Compile>
     <Page Include="DailyRegister.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="LogBookTask.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LoginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,9 +106,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DailyRegister.xaml.cs">
-      <DependentUpon>DailyRegister.xaml</DependentUpon>
     </Compile>
     <Compile Include="DVTModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -170,12 +165,24 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="logo-1.ico" />
+    <Resource Include="sign_up_button.jpg" />
+    <Resource Include="Image8.png" />
+    <Resource Include="Image7.png" />
+    <Resource Include="Image6.png" />
+    <Resource Include="Image5.png" />
+    <Resource Include="Image4.png" />
+    <Resource Include="Loginimage.png" />
+    <Resource Include="Logbook sign in.png" />
+    <Resource Include="Save.jpg" />
     <Resource Include="Picture2.png" />
     <Resource Include="Image3.png" />
     <Resource Include="Image2.png" />
     <Resource Include="user-14.png" />
     <Resource Include="Picture1.png" />
     <Resource Include="dvt.png" />
+    <Resource Include="dvtlogo1.png" />
+    <Resource Include="Arrow.jpg" />
     <Content Include="DVTModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DVTModel.edmx</DependentUpon>

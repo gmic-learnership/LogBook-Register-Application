@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 
 namespace LogBookWPF
@@ -36,11 +37,30 @@ namespace LogBookWPF
 
         private void btnSignup_Click(object sender, RoutedEventArgs e)
         {
-            ConnectionClass signup = new ConnectionClass();
+            Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
 
-            int roles = cmRoles.SelectedIndex + 1;
+            if (emailRegex.IsMatch(txtemail.Text))
+            {
+                
+                ConnectionClass signup = new ConnectionClass();
 
-            signup.Signup(this.txtSurname.Text, this.txtFullName.Text,  this.Gender.Text, this.txtemail.Text, this.txtUsername.Text, this.txtPassword.Text, roles);
+                int roles = cmRoles.SelectedIndex + 1;
+
+                signup.Signup(this.txtSurname.Text, this.txtFullName.Text, this.Gender.Text, this.txtemail.Text, this.txtUsername.Text, this.txtPassword.Text, roles);
+
+            }
+            else
+            {
+                label.Content = "*";
+                MessageBox.Show("Invalid Email Address");
+                txtemail.Clear();
+                txtemail.Focus();
+            }
+
+
+
+
+            
         }
 
 

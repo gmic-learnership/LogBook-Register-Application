@@ -25,25 +25,37 @@ namespace LogBookWPF
             InitializeComponent();
         }
 
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    SignUpForm signing = new SignUpForm();
+        //    signing.Show();
+
+        //}
+
+        //private void btnLogin_Click(object sender, RoutedEventArgs e)
+        //{
+        //    LoginForm login = new LoginForm();
+        //    login.Show();
+        //}
+
+        //private void btnSignup_Click(object sender, RoutedEventArgs e)
+        //{
+        //   SignUpForm signup = new SignUpForm();
+        //    signup.Show();
+        //    //LogBookTask lbt = new LogBookTask();
+        //   // lbt.Show();
+        //}
+
+        private void btnlog_Click(object sender, RoutedEventArgs e)
+        {
+            ConnectionClass login2 = new ConnectionClass();
+            string loginSuccess = login2.LoginMentors(txtUsername.Text, Password.Password);
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             SignUpForm signing = new SignUpForm();
-            signing.Show();
-
-        }
-
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            LoginForm login = new LoginForm();
-            login.Show();
-        }
-
-        private void btnSignup_Click(object sender, RoutedEventArgs e)
-        {
-           // SignUpForm signup = new SignUpForm();
-            //signup.Show();
-            LogBookTask lbt = new LogBookTask();
-            lbt.Show();
+              signing.Show();
         }
     }
 }

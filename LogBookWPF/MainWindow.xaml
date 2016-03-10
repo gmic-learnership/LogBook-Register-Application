@@ -1,14 +1,33 @@
 ﻿<Window x:Class="LogBookWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Logbook:" Height="350" Width="550" Icon="logo-1.ico">
     <Grid>
-        <Image Margin="0,0,351,264" Source="dvt.png" Stretch="Fill"/>
-        <Grid HorizontalAlignment="Left" Height="161" Margin="0,60,0,0" VerticalAlignment="Top" Width="517" Background="#FF2A398C"/>
-        <Grid HorizontalAlignment="Left" Height="98" Margin="0,221,0,0" VerticalAlignment="Top" Width="517" Background="#FFEFAC20">
-            <Button Content="LOGIN" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" Width="131" x:Name="btnLogin" Click="btnLogin_Click" Height="65"/>
-            <Button Content="SIGNUP" HorizontalAlignment="Left" Margin="317,10,0,0" VerticalAlignment="Top" Width="138" x:Name="btnSignup" Click="btnSignup_Click" Height="65"/>
+        <Grid HorizontalAlignment="Left" Height="240" Margin="0,87,0,0" VerticalAlignment="Top" Width="555" Background="#FF2A398C">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="287*"/>
+                <ColumnDefinition Width="468*"/>
+            </Grid.ColumnDefinitions>
         </Grid>
+        <Grid HorizontalAlignment="Left" Height="96" Margin="0,235,0,0" VerticalAlignment="Top" Width="555" Background="#FFEFAC20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="77*"/>
+                <ColumnDefinition Width="541*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Image Margin="32,0,470,329" Source="dvt.png" Stretch="Fill"/>
+        <Grid HorizontalAlignment="Left" Height="68" Margin="0,250,0,0" VerticalAlignment="Top" Width="542" Background="#FFEFAC20">
+            <Button Content="Login:" HorizontalAlignment="Left" Margin="218,10,0,0" VerticalAlignment="Top" Width="86" x:Name="btnlog" Click="btnlog_Click" Height="32" FontWeight="Bold" FontSize="15" BorderBrush="Black" Background="White"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="173" Margin="0,77,0,0" VerticalAlignment="Top" Width="542" Background="#FF2A398C">
+            <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182" Margin="201,45,0,0" BorderBrush="{x:Null}"/>
+            <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="201,93,0,0" VerticalAlignment="Top" Width="182" Height="28" BorderBrush="{x:Null}" Foreground="Black"/>
+            <Label HorizontalAlignment="Left" Margin="46,93,0,0" VerticalAlignment="Top" Width="144" FontSize="15" RenderTransformOrigin="-0.479,0.375" Height="28" Content="Password:" Foreground="White"/>
+            <Label Content="Username:" HorizontalAlignment="Left" Margin="46,44,0,0" VerticalAlignment="Top" Width="150" FontSize="15" Foreground="White"/>
+        </Grid>
+        <Image Margin="513,0,65,305" Source="Image4.png" Stretch="Fill"/>
+        <Button Content="SIGN UP" HorizontalAlignment="Left" Margin="375,10,0,0" VerticalAlignment="Top" Width="120.015" Height="56" BorderThickness="0" Click="Button_Click" UseLayoutRounding="False" Background="{x:Null}" FontSize="30" Foreground="#FF2A398C"/>
+        <Image Margin="32,-2,305,253" Source="dvtlogo1.png" Stretch="Fill"/>
 
     </Grid>
 </Window>
