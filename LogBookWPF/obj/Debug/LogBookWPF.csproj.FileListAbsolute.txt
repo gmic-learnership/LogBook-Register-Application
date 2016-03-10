@@ -74,6 +74,33 @@ D:\late\LogBookWPF\obj\Debug\LogBookWPF_MarkupCompile.cache
 D:\late\LogBookWPF\obj\Debug\LogBookWPF.g.resources
 D:\late\LogBookWPF\obj\Debug\LogBookWPF.Properties.Resources.resources
 D:\late\LogBookWPF\obj\Debug\LogBookWPF.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\bin\Debug\LogBookWPF.exe.config
 C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\obj\Debug\LogBookWPF.exe
 C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\obj\Debug\LogBookWPF.pdb
+=======
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\bin\Debug\LogBookWPF.exe.config
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF.exe
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF.pdb
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\bin\Debug\LogBookWPF.exe
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\bin\Debug\LogBookWPF.pdb
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\bin\Debug\EntityFramework.dll
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\bin\Debug\EntityFramework.xml
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF.csprojResolveAssemblyReference.cache
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\DailyRegister.baml
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookTask.baml
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\MainWindow.baml
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\SignUpForm.baml
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\DailyRegister.g.cs
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookTask.g.cs
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\MainWindow.g.cs
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\SignUpForm.g.cs
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\App.g.cs
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF_Content.g.cs
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF_MarkupCompile.cache
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF.g.resources
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF.Properties.Resources.resources
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\LogBookWPF.csproj.GenerateResource.Cache
+>>>>>>> 61745c04289742bed7f71fc1e1815d902ca8669e

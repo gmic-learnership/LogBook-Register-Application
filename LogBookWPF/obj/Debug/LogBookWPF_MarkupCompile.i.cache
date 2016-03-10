@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\obj\Debug\
+=======
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\obj\Debug\
+>>>>>>> 61745c04289742bed7f71fc1e1815d902ca8669e
 LogBookWPF
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\App.xaml
 4710733553
 2791034850
 22-1226166683
 17-634760136
+=======
+C:\Users\BMAHLANGU\Desktop\folder\LogBookWPF\App.xaml
+4710733553
+2791034850
+221910108852
+17312514372
+>>>>>>> 61745c04289742bed7f71fc1e1815d902ca8669e
 DailyRegister.xaml;LogBookTask.xaml;MainWindow.xaml;SignUpForm.xaml;
 
 False
