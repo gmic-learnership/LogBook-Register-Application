@@ -74,3 +74,6 @@ D:\late\LogBookWPF\obj\Debug\LogBookWPF_MarkupCompile.cache
 D:\late\LogBookWPF\obj\Debug\LogBookWPF.g.resources
 D:\late\LogBookWPF\obj\Debug\LogBookWPF.Properties.Resources.resources
 D:\late\LogBookWPF\obj\Debug\LogBookWPF.csproj.GenerateResource.Cache
+C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\bin\Debug\LogBookWPF.exe.config
+C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\obj\Debug\LogBookWPF.exe
+C:\Users\VTEBEILA\Desktop\LearnershipLogBook\LogBookWPF\obj\Debug\LogBookWPF.pdb
